@@ -1,0 +1,71 @@
+.payment {
+    // box model
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+
+    // visual
+    list-style-type: none;
+
+    @include atDesktopS {
+        // box model
+        gap: 40px;
+    }
+}
+
+.payment__item {
+    // box model
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    // typography
+    color: #C3C3C3;
+    font-family: $mainFont;
+    font-size: 0.7rem;
+    font-weight: 400;
+
+    @include atDesktopS {
+        // typography
+        font-size: 0.8rem;
+    }
+}
+
+.payment__item::before {
+    content: '';
+    // box model
+    display: flex;
+    width: 15px;
+    height: 15px;
+
+     // visual
+     background-repeat: no-repeat;
+     background-size: contain;
+
+     @include atDesktopS {
+        // box model
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.payment__item--qiwi::before {
+    // visual
+    background-image: url('./img/qiwi.png');
+}
+
+.payment__item--yandex::before {
+    // visual
+    background-image: url('./img/yamoney.png');
+}
+
+.payment__item--webmoney::before {
+    // visual
+    background-image: url('./img/webmoney.png');
+}
+
+.payment__item:hover {
+    // visual
+    cursor: default;
+}

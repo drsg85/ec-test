@@ -1,10 +1,9 @@
 // colors
-$black: #000000;
-$light: #ffffff;
-$lightGrey: #aeaeae;
-$grey: #6b6969;
-$bianca: #fbf6ee;
-$golden: #d6a354;
-$darkGold: #896322;
-$red: rgb(175, 33, 46);
-$blue: rgb(0, 101, 168);
+$light: rgba(255, 255, 255, 1);
+$dark: rgba(0, 0, 0, 1);
+$blue: rgba(66, 169, 237, 1);
+$lightblue: rgba(62, 156, 220, 1);
+
+// fonts
+$mainFont: 'Lato', Arial, sans-serif;
+$titleFont: 'Raleway', Arial, sans-serif;

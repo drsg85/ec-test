@@ -7,6 +7,121 @@ html(lang="en")
 
         link(rel="stylesheet", href="styles.css")
 
-        title Document
+        title ec-test
         
     body
+        header.hero
+            .hero__top
+                .hero__container
+                    .hero__logo
+                        a(href="#").logo Loremipsum.<span class="color-blue">net</span>
+                    .hero__nav.hero__nav--hidden
+                        include modules/_menu.pug
+                    .menu-button
+                        .menu-button__middle
+            .hero__container
+                .hero__content
+                    .hero__caption
+                        h1.hero__title <span class="color-blue">Lorem ipsum</span> dolor sit ametconsectetur <span class="color-blue">adipiscing</span>
+                    .hero__benefits
+                        ul.benefits At vero eos et accusamus et iusto odio dignissimos ducimus!
+                            li.benefits__item Totam rem aperiam eaque ipsa
+                            li.benefits__item Sit voluptatem accusantium doloremque laudantium
+                            li.benefits__item Sed ut perspiciatis, unde omnis iste natus error
+                    .hero__buttons
+                        a.button(href="#form") Заказать
+                        a.button.button--light(href="#form") Подробнее
+
+        main 
+            section.checkout
+                .checkout__container
+                    .checkout__header
+                        .checkout-header
+                            h2.checkout-header__title Оформление <span class="color-blue">заказа</span>
+                            p.checkout-header__subtitle Перед заполнением формы ознакомьтесь с нашей схемой работы!
+                    .checkout__stages
+                        ul.stages
+                            li.stages__item.stages__item--loupe
+                                p.stages__item-text Lorem ipsum dolor sit amet
+                            li.stages__item.stages__item--percent
+                                p.stages__item-text Сonsecteturadipiscing elit
+                            li.stages__item.stages__item--docs
+                                p.stages__item-text Sed do eiusmod tempor
+                            li.stages__item.stages__item--envelope
+                                p.stages__item-text Esse cillum dolore eu fugiat
+                            li.stages__item.stages__item--money
+                                p.stages__item-text Excepteur sint occaecat cupidatat non proident
+                    .checkout__form
+                        form.form#form(action="" method="POST")
+                            .form__group
+
+                                .form__select(data-state="")
+                                    .form__select-title(data-default="Выберите тип системы") Выберите тип системы
+                                    .form__select-content
+                                        input.form__select-input#singleSelect0(type="radio" name="singleSelect" checked)
+                                        label.form__select-label(for="singleSelect0") Sed ut perspiciatis
+
+                                        input.form__select-input#singleSelect1(type="radio" name="singleSelect" checked)
+                                        label.form__select-label(for="singleSelect1") Nemo enim ipsam
+
+                                        input.form__select-input#singleSelect2(type="radio" name="singleSelect" checked)
+                                        label.form__select-label(for="singleSelect2") Et harum quidem
+
+                                        input.form__select-input#singleSelect3(type="radio" name="singleSelect" checked)
+                                        label.form__select-label(for="singleSelect3") Temporibus autem
+
+                                        input.form__select-input#singleSelect4(type="radio" name="singleSelect" checked)
+                                        label.form__select-label(for="singleSelect4") Itaque earum rerum
+
+                                        input.form__select-input#singleSelect5(type="radio" name="singleSelect" checked)
+                                        label.form__select-label(for="singleSelect5") Nemo enim ipsam
+
+                                        input.form__select-input#singleSelect6(type="radio" name="singleSelect" checked)
+                                        label.form__select-label(for="singleSelect6") Et harum quidem
+
+                                        input.form__select-input#singleSelect7(type="radio" name="singleSelect" checked)
+                                        label.form__select-label(for="singleSelect7") Temporibus autem
+
+                                        input.form__select-input#singleSelect8(type="radio" name="singleSelect" checked)
+                                        label.form__select-label(for="singleSelect8") Itaque earum rerum
+
+                                label.sr-only(for="email") Ваш e-mail
+                                input.form__input(type="text" id="email" placeholder="Ваш e-mail" name="mail" required)
+                                label.sr-only(for="name") Ваше имя
+                                input.form__input(type="text" id="name" placeholder="Ваше имя" name="username" required)
+                            .form__group
+                                .form__range
+                                    label.sr-only(for="range")
+                                    .form__range-text
+                                        p.form__range-decs Sed ut perspiciatis, unde omnis iste natus
+                                        p.form__range-output 75%
+                                    input.form__range-slider(type="range" value="75" id="range" name="scale" min="1" max="100")
+                                .form__file
+                                    input.form__input-file(type="file" id="input__file" name="file")
+                                    label.form__file-button(for="input__file")
+                                        span.form__file-icon-wrapper
+                                            img.form__file-icon(src="./img/file.svg" alt="Прикрепить файл" width="25")
+                                        span.form__file-button-text Прикрепить файл
+                            .form__button
+                                input.button.button--large(type="submit" value="Отправить")
+        footer.footer
+            .footer__container
+                .footer__content 
+                    p.footer__copurights © 2018 «LoremIpsum.net» Все права защищены.
+                    .footer__payments
+                        ul.payment
+                            li.payment__item.payment__item--qiwi QIWI wallet
+                            li.payment__item.payment__item--yandex Yandex Money
+                            li.payment__item.payment__item--webmoney Web Money
+                    .footer__contacts
+                        ul.contacts
+                            li.contact__item.contact__item--mail
+                                a(href="mailto:info@ipsum228.com") info@ipsum228.com
+                            li.contact__item.contact__item--vk
+                                a(href="vk.com") Мы вконтакте
+
+        button.up-button#up-button
+                .up-button__arrow
+                p.up-button__text Наверх
+
+    script(src="scripts.js")

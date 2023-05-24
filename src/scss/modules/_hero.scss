@@ -1,0 +1,224 @@
+.hero {
+    // box model
+    width: 100%;
+    height: 80vw;
+
+    // visual
+    background-image: url('./img/header.jpg');
+    background-position-x: 50%;
+    background-size: cover;
+
+    @include atMobile {
+        // box model
+        height: 77vw;
+    }
+
+    @include atDesktopS {
+        // box model
+        height: 700px;
+    }
+
+    @include atDesktopL {
+        // box model
+        padding-bottom: 200px;
+        height: initial;
+    }
+}
+
+.hero__top {
+    // positioning
+    position: fixed;
+    top: 0;
+
+    // box model
+    width: 100%;
+    padding: 10px;
+
+    // visual
+    background-color: rgba(16, 16, 29, 0.9);
+    z-index: 9;
+
+    @include atMobile {
+        // box model
+        padding: 15px 25px;
+    }
+
+    @include atTablet {
+        // box model
+        display: flex;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    @include atDesktopL {
+        // box model
+        margin-bottom: 100px;
+        padding: 26.5px 0;
+    }
+}
+
+.hero__container {
+    // box model
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @include atDesktopL {
+        // box model
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.hero__nav {
+    // positioning
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 777;
+
+    // box model
+    width: 100%;
+    max-width: 400px;
+
+    // visual
+    opacity: 0.9;
+    transition: all 0.3s ease-out;
+
+    &--hidden {
+        // positioning
+        right: -110%;
+    }
+
+    @include atDesktopS {
+        // positioning
+        position: unset;
+
+        // box model
+        width: auto;
+        max-width: unset;
+        margin-left: auto;
+        
+        // visual
+        visibility: visible;
+        opacity: 1;
+    }
+
+    @include atDesktopM {
+        // positioning
+        left: 260px;
+    }
+
+    @include atDesktopL {
+        // positioning
+        left: 320px;
+    }
+
+    @include atFullHD {
+        // positioning
+        left: 400px;
+    }
+}
+
+.hero__content {
+    // box model
+    display: flex;
+    flex-direction: column;
+    margin-top: 39px;
+    padding: 0 10px;
+    padding-top: 10px;
+
+    @include atMobile {
+        // box model
+        height: 60vw;
+        margin-top: 54px;
+        justify-content: space-between;
+        padding: 0 15px;
+        padding-top: 15px;
+    }
+
+    @include atTablet {
+        // box model
+        margin-top: 72px;
+        padding: 30px 40px;
+    }
+
+    @include atDesktopS {
+        // box model
+        margin-top: 87px;
+        height: initial;
+        padding: 60px 50px;
+    }
+
+    @include atDesktopL {
+        // box model
+        padding: 0;
+        margin-top: 200px;
+    }
+}
+
+.hero__caption {
+    // box model
+    margin-bottom: 10px;
+
+    @include atDesktopS {
+        // box model
+        margin-bottom: 80px;
+    }
+}
+
+.hero__title {
+    // box model
+    margin: 0;
+
+    // typography
+    color: $dark;
+    font-family: $mainFont;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    @include atMobile {
+        // box model
+        max-width: 320px;
+
+        // typography
+        font-size: 1.2rem;
+    }
+
+    @include atTablet {
+        // box model
+        max-width: 380px;
+
+        // typography
+        font-size: 2rem;
+    }
+
+    @include atDesktopS {
+        // box model
+        max-width: 770px;
+
+        // typography
+        font-size: 3rem;
+    }
+}
+
+.hero__benefits {
+    @include atDesktopS {
+        // box model
+        margin-bottom: 80px;
+    }
+}
+
+.hero__buttons {
+    // box model
+    display: flex;
+    gap: 10px;
+
+    @include atTablet {
+        // box model
+        gap: 30px;
+    }
+}

@@ -1,0 +1,75 @@
+.contacts {
+    // box model
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+
+    // visual
+    list-style-type: none;
+
+    @include atDesktopS {
+        // box model
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+
+.contact__item {
+    // box model
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact__item a {
+    // typography
+    color: #C3C3C3;
+    font-family: $mainFont;
+    font-size: 0.7rem;
+    font-weight: 400;
+
+    // visual
+    text-decoration: none;
+
+    @include atDesktopS {
+        // typography
+        font-size: 0.8rem;
+    }
+}
+
+.contact__item::before {
+    content: '';
+    // box model
+    display: flex;
+    width: 15px;
+    height: 15px;
+
+     // visual
+     background-repeat: no-repeat;
+     background-size: contain;
+
+     @include atDesktopS {
+        // box model
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.contact__item--mail::before {
+    // visual
+    background-image: url('./img/email.png');
+}
+
+.contact__item--vk::before {
+    // visual
+    background-image: url('./img/vk.png');
+}
+
+.contact__item:hover {
+    @include atDesktopS {
+        // visual
+        opacity: 0.8;
+    }
+}

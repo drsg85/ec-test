@@ -1,0 +1,59 @@
+.checkout {
+    // box model
+    padding: 20px 10px;
+
+    // visual
+    background-image: url('./img/checkout_bg.jpg');
+    background-size: cover;
+
+    @include atDesktopS {
+        // box model
+        padding: 40px 50px;
+    }
+
+    @include atDesktopL {
+        // box model
+        padding: 120px 0 150px 0;
+    }
+}
+
+.checkout__container {
+    // box model
+    width: 100%;
+
+    @include atDesktopL {
+        // box model
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.checkout__header {
+    // box model
+    margin-bottom: 20px;
+
+    @include atMobile {
+        // box model
+        margin-bottom: 30px;
+    }
+
+    @include atDesktopS {
+        // box model
+        margin-bottom: 80px;
+    }
+}
+
+.checkout__stages {
+    // box model
+    margin-bottom: 20px;
+
+    @include atMobile {
+        // box model
+        margin-bottom: 30px;
+    }
+
+    @include atDesktopS {
+         // box model
+         margin-bottom: 80px;
+    }
+}

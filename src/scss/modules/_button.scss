@@ -1,0 +1,71 @@
+.button {
+    // box model
+    display: inline-block;
+    padding: 0.5em 1em;
+    vertical-align: middle;
+
+
+    // typography
+    color: $light;
+    font-family: $mainFont;
+    font-size: 0.6em;
+    font-weight: 400;
+
+    // visual
+    background-color: $lightblue;
+    border-radius: 0.2em;
+    outline: 1px solid #ffffff;
+    text-decoration: none;
+
+    @include atMobile {
+        // typography
+        font-size: 0.8em;
+    }
+
+    @include atTablet {
+        // typography
+        font-size: 1.2rem;
+    }
+
+    @include atDesktopL {
+        // box model
+        width: 185px;
+        padding: 1rem 0;
+
+        // typography
+        line-height: 1rem;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+.button:hover {
+    @include atDesktopS {
+        // visual
+        opacity: 0.8;
+    }
+}
+
+.button--light {
+    // typography
+    color: $dark;
+
+    // visual
+    background-color: $light;
+    outline: 1px solid #6F6D7B;
+}
+
+.button--large {
+    // box model
+    max-width: 250px;
+    width: 100%;
+
+    // visual
+    cursor: pointer;
+
+    @include atTablet {
+        // box model
+        width: 370px;
+        max-width: initial;
+    }
+}

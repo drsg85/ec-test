@@ -1,0 +1,96 @@
+.footer {
+    // box model
+    padding: 20px 10px;
+
+    // visual
+    background-color: #3D4050;
+}
+
+.footer__container {
+    // box model
+    width: 100%;
+
+    @include atDesktopL {
+        // box model
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.footer__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include atDesktopL {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.footer__copurights {
+    // position
+    position: relative;
+
+    // box model
+    margin: 0;
+    margin-bottom: 10px;
+
+    // typography
+    color: $light;
+    font-family: $mainFont;
+    font-size: 0.7rem;
+    font-weight: 400;
+
+    @include atDesktopS {
+        // typography
+        font-size: 0.8rem;
+    }
+
+    @include atDesktopL {
+        // box model
+        margin-bottom: initial;
+    }
+}
+
+.footer__copurights::after {
+    @include atDesktopL {
+        content: '|';
+        // position
+        position: absolute;
+        left: 22rem;
+        top: 0;
+    }
+}
+
+.footer__payments {
+    // box model
+    margin-bottom: 10px;
+
+    @include atDesktopL {
+        // box model
+        margin-bottom: initial;
+    }
+}
+
+.footer__contacts {
+    // position
+    position: relative;
+}
+
+.footer__contacts::before {
+    // typography
+    color: $light;
+    font-family: $mainFont;
+
+    @include atDesktopL {
+        content: '|';
+        // position
+        position: absolute;
+        right: 22rem;
+        top: 0;
+    }
+}

@@ -6,9 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>ec-test</title>
 </head>
 
-<body></body>
+<body>
+    <header class="hero">
+        <div class="hero__top">
+            <div class="hero__container">
+                <div class="hero__logo"><a class="logo" href="#">Loremipsum.<span class="color-blue">net</span></a></div>
+                <div class="hero__nav hero__nav--hidden">
+                    <nav class="main-nav">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item"><a class="main-nav__link smooth-trigger" href="index.html">Бизнес</a></li>
+                            <li class="main-nav__item"><a class="main-nav__link smooth-trigger" href="#about">О Нас</a></li>
+                            <li class="main-nav__item"><a class="main-nav__link smooth-trigger" href="#price">Цены</a></li>
+                            <li class="main-nav__item"><a class="main-nav__link smooth-trigger" href="#form">Оформить заказ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu-button">
+                    <div class="menu-button__middle"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="hero__caption">
+                    <h1 class="hero__title"><span class="color-blue">Lorem ipsum</span> dolor sit ametconsectetur <span class="color-blue">adipiscing</span></h1>
+                </div>
+                <div class="hero__benefits">
+                    <ul class="benefits">At vero eos et accusamus et iusto odio dignissimos ducimus!<li class="benefits__item">Totam rem aperiam eaque ipsa</li>
+                        <li class="benefits__item">Sit voluptatem accusantium doloremque laudantium</li>
+                        <li class="benefits__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+                    </ul>
+                </div>
+                <div class="hero__buttons"><a class="button" href="#form">Заказать</a><a class="button button--light" href="#form">Подробнее</a></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="checkout">
+            <div class="checkout__container">
+                <div class="checkout__header">
+                    <div class="checkout-header">
+                        <h2 class="checkout-header__title">Оформление <span class="color-blue">заказа</span></h2>
+                        <p class="checkout-header__subtitle">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+                    </div>
+                </div>
+                <div class="checkout__stages">
+                    <ul class="stages">
+                        <li class="stages__item stages__item--loupe">
+                            <p class="stages__item-text">Lorem ipsum dolor sit amet</p>
+                        </li>
+                        <li class="stages__item stages__item--percent">
+                            <p class="stages__item-text">Сonsecteturadipiscing elit</p>
+                        </li>
+                        <li class="stages__item stages__item--docs">
+                            <p class="stages__item-text">Sed do eiusmod tempor</p>
+                        </li>
+                        <li class="stages__item stages__item--envelope">
+                            <p class="stages__item-text">Esse cillum dolore eu fugiat</p>
+                        </li>
+                        <li class="stages__item stages__item--money">
+                            <p class="stages__item-text">Excepteur sint occaecat cupidatat non proident</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="checkout__form">
+                    <form class="form" id="form" action="" method="POST">
+                        <div class="form__group">
+                            <div class="form__select" data-state="">
+                                <div class="form__select-title" data-default="Выберите тип системы">Выберите тип системы</div>
+                                <div class="form__select-content"><input class="form__select-input" id="singleSelect0" type="radio" name="singleSelect" checked="checked" /><label class="form__select-label" for="singleSelect0">Sed ut perspiciatis</label><input class="form__select-input" id="singleSelect1" type="radio" name="singleSelect" checked="checked" /><label class="form__select-label" for="singleSelect1">Nemo enim ipsam</label><input class="form__select-input" id="singleSelect2" type="radio" name="singleSelect" checked="checked" /><label class="form__select-label" for="singleSelect2">Et harum quidem</label><input class="form__select-input" id="singleSelect3" type="radio" name="singleSelect" checked="checked" /><label class="form__select-label" for="singleSelect3">Temporibus autem</label><input class="form__select-input" id="singleSelect4" type="radio" name="singleSelect" checked="checked" /><label class="form__select-label" for="singleSelect4">Itaque earum rerum</label><input class="form__select-input" id="singleSelect5" type="radio" name="singleSelect" checked="checked" /><label class="form__select-label" for="singleSelect5">Nemo enim ipsam</label><input class="form__select-input" id="singleSelect6" type="radio" name="singleSelect" checked="checked" /><label class="form__select-label" for="singleSelect6">Et harum quidem</label><input class="form__select-input" id="singleSelect7" type="radio" name="singleSelect" checked="checked" /><label class="form__select-label" for="singleSelect7">Temporibus autem</label><input class="form__select-input" id="singleSelect8" type="radio" name="singleSelect" checked="checked" /><label class="form__select-label" for="singleSelect8">Itaque earum rerum</label></div>
+                            </div><label class="sr-only" for="email">Ваш e-mail</label><input class="form__input" type="text" id="email" placeholder="Ваш e-mail" name="mail" required="required" /><label class="sr-only" for="name">Ваше имя</label><input class="form__input" type="text" id="name" placeholder="Ваше имя" name="username" required="required" />
+                        </div>
+                        <div class="form__group">
+                            <div class="form__range"><label class="sr-only" for="range"></label>
+                                <div class="form__range-text">
+                                    <p class="form__range-decs">Sed ut perspiciatis, unde omnis iste natus</p>
+                                    <p class="form__range-output">75%</p>
+                                </div><input class="form__range-slider" type="range" value="75" id="range" name="scale" min="1" max="100" />
+                            </div>
+                            <div class="form__file"><input class="form__input-file" type="file" id="input__file" name="file" /><label class="form__file-button" for="input__file"><span class="form__file-icon-wrapper"><img class="form__file-icon" src="./img/file.svg" alt="Прикрепить файл" width="25" /></span><span class="form__file-button-text">Прикрепить файл</span></label></div>
+                        </div>
+                        <div class="form__button"><input class="button button--large" type="submit" value="Отправить" /></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <p class="footer__copurights">© 2018 «LoremIpsum.net» Все права защищены.</p>
+                <div class="footer__payments">
+                    <ul class="payment">
+                        <li class="payment__item payment__item--qiwi">QIWI wallet</li>
+                        <li class="payment__item payment__item--yandex">Yandex Money</li>
+                        <li class="payment__item payment__item--webmoney">Web Money</li>
+                    </ul>
+                </div>
+                <div class="footer__contacts">
+                    <ul class="contacts">
+                        <li class="contact__item contact__item--mail"><a href="mailto:info@ipsum228.com">info@ipsum228.com</a></li>
+                        <li class="contact__item contact__item--vk"><a href="vk.com">Мы вконтакте</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><button class="up-button" id="up-button">
+        <div class="up-button__arrow"></div>
+        <p class="up-button__text">Наверх</p>
+    </button>
+</body>
+<script src="scripts.js"></script>
 
 </html>
